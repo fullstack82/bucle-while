@@ -13,7 +13,7 @@ while(condicion) {      // Mientras que la condicion se cumpla , entra al bloque
 */
 
 
-$numero = 0;
+/*$numero = 0;
 
 while ($numero <= 100) {
     echo "<p>$numero</p>";
@@ -24,24 +24,23 @@ while ($numero <= 100) {
     $numero++;
 }
 
-echo "<hr/>";
+echo "<hr/>";*/
 
 
 // Ejemplo while 
 
 
-if(isset($_GET['numero'])){     // Isset muestra si la variable existe
-    $numero = $_GET['numero'];
-}else{
+if (isset($_GET['numero'])) {     // Isset muestra si la variable existe
+    $numero = (int)$_GET['numero']; // Casteo de datos , castear una variable significa cambiarle el tipo. (Si queremos)
+} else {
     $numero = 1;
 }
 
 
-var_dump($numero);
+echo "<h1> Tabla de multiplicar del número $numero </h1>";
 
-
-
-
-
-
-
+$contador = 4;
+while ($contador <= 10) {
+    echo "$numero x $contador = ".($numero*$contador)."<br/>";
+    $contador++;
+};
