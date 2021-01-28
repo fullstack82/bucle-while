@@ -15,15 +15,33 @@ while(condicion) {      // Mientras que la condicion se cumpla , entra al bloque
 
 $numero = 0;
 
-while($numero <= 100){
+while ($numero <= 100) {
     echo "<p>$numero</p>";
 
-    if($numero != 100){
+    if ($numero != 100) {
         echo ", ";        // Agrega la coma
     }
-
-
-
-
     $numero++;
 }
+
+echo "<hr/>";
+
+
+// Ejemplo while 
+
+
+if(isset($_GET['numero'])){     // Isset muestra si la variable existe
+    $numero = $_GET['numero'];
+}else{
+    $numero = 1;
+}
+
+
+var_dump($numero);
+
+
+
+
+
+
+
