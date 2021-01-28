@@ -17,5 +17,13 @@ $numero = 0;
 
 while($numero <= 100){
     echo "<p>$numero</p>";
+
+    if($numero != 100){
+        echo ", ";        // Agrega la coma
+    }
+
+
+
+
     $numero++;
 }
