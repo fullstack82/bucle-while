@@ -13,3 +13,9 @@ while(condicion) {      // Mientras que la condicion se cumpla , entra al bloque
 */
 
 
+$numero = 0;
+
+while($numero <= 100){
+    echo "<p>$numero</p>";
+    $numero++;
+}
