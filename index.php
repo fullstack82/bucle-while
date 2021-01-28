@@ -33,13 +33,14 @@ echo "<hr/>";*/
 if (isset($_GET['numero'])) {     // Isset muestra si la variable existe
     $numero = (int)$_GET['numero']; // Casteo de datos , castear una variable significa cambiarle el tipo. (Si queremos)
 } else {
-    $numero = 1;
+    $numero = 5;
 }
 
+//Creando tablas de multiplicar
 
 echo "<h1> Tabla de multiplicar del número $numero </h1>";
 
-$contador = 4;
+$contador = 5;
 while ($contador <= 10) {
     echo "$numero x $contador = ".($numero*$contador)."<br/>";
     $contador++;
